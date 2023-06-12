@@ -14,6 +14,7 @@
 		C870975A2A371FCF00710495 /* YourManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097592A371FCF00710495 /* YourManagerTests.swift */; };
 		C87097642A371FCF00710495 /* YourManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097632A371FCF00710495 /* YourManagerUITests.swift */; };
 		C87097662A371FCF00710495 /* YourManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097652A371FCF00710495 /* YourManagerUITestsLaunchTests.swift */; };
+		C87097732A37204700710495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87097722A37204700710495 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C870975F2A371FCF00710495 /* YourManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87097632A371FCF00710495 /* YourManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerUITests.swift; sourceTree = "<group>"; };
 		C87097652A371FCF00710495 /* YourManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C87097722A37204700710495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		C87097472A371FCE00710495 /* YourManager */ = {
 			isa = PBXGroup;
 			children = (
+				C87097722A37204700710495 /* GoogleService-Info.plist */,
 				C87097482A371FCE00710495 /* YourManagerApp.swift */,
 				C870974A2A371FCE00710495 /* ContentView.swift */,
 				C870974C2A371FCF00710495 /* Assets.xcassets */,
@@ -233,6 +236,7 @@
 			files = (
 				C87097502A371FCF00710495 /* Preview Assets.xcassets in Resources */,
 				C870974D2A371FCF00710495 /* Assets.xcassets in Resources */,
+				C87097732A37204700710495 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
