@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8170A602A386A53004D082C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A5F2A386A53004D082C /* LoginView.swift */; };
+		C8170A632A386C76004D082C /* LoginButtonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A622A386C76004D082C /* LoginButtonWidget.swift */; };
+		C8170A662A386D54004D082C /* Login Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A652A386D54004D082C /* Login Types.swift */; };
+		C8170A692A387D2E004D082C /* Screen Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A682A387D2E004D082C /* Screen Size.swift */; };
+		C8170A6B2A387F55004D082C /* Create Account Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A6A2A387F55004D082C /* Create Account Sheet.swift */; };
+		C8170A6E2A38824F004D082C /* Sheet Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A6D2A38824F004D082C /* Sheet Button.swift */; };
+		C8170A702A388BE0004D082C /* TextInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8170A6F2A388BE0004D082C /* TextInputStyle.swift */; };
 		C87097492A371FCE00710495 /* YourManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097482A371FCE00710495 /* YourManagerApp.swift */; };
 		C870974B2A371FCE00710495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870974A2A371FCE00710495 /* ContentView.swift */; };
 		C870974D2A371FCF00710495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C870974C2A371FCF00710495 /* Assets.xcassets */; };
@@ -15,6 +22,9 @@
 		C87097642A371FCF00710495 /* YourManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097632A371FCF00710495 /* YourManagerUITests.swift */; };
 		C87097662A371FCF00710495 /* YourManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097652A371FCF00710495 /* YourManagerUITestsLaunchTests.swift */; };
 		C87097732A37204700710495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87097722A37204700710495 /* GoogleService-Info.plist */; };
+		C87097762A37214600710495 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C87097752A37214600710495 /* FirebaseAnalytics */; };
+		C87097782A37214600710495 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C87097772A37214600710495 /* FirebaseAuth */; };
+		C870977A2A37214600710495 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C87097792A37214600710495 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8170A5F2A386A53004D082C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C8170A622A386C76004D082C /* LoginButtonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonWidget.swift; sourceTree = "<group>"; };
+		C8170A652A386D54004D082C /* Login Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Types.swift"; sourceTree = "<group>"; };
+		C8170A682A387D2E004D082C /* Screen Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen Size.swift"; sourceTree = "<group>"; };
+		C8170A6A2A387F55004D082C /* Create Account Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Create Account Sheet.swift"; sourceTree = "<group>"; };
+		C8170A6D2A38824F004D082C /* Sheet Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sheet Button.swift"; sourceTree = "<group>"; };
+		C8170A6F2A388BE0004D082C /* TextInputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputStyle.swift; sourceTree = "<group>"; };
 		C87097452A371FCE00710495 /* YourManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87097482A371FCE00710495 /* YourManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerApp.swift; sourceTree = "<group>"; };
 		C870974A2A371FCE00710495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87097762A37214600710495 /* FirebaseAnalytics in Frameworks */,
+				C87097782A37214600710495 /* FirebaseAuth in Frameworks */,
+				C870977A2A37214600710495 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +93,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8170A5D2A386A36004D082C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A672A387682004D082C /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C8170A5E2A386A43004D082C /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A5F2A386A53004D082C /* LoginView.swift */,
+				C8170A6A2A387F55004D082C /* Create Account Sheet.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		C8170A612A386C5F004D082C /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A622A386C76004D082C /* LoginButtonWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		C8170A642A386D42004D082C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A652A386D54004D082C /* Login Types.swift */,
+				C8170A682A387D2E004D082C /* Screen Size.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8170A672A387682004D082C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A5E2A386A43004D082C /* VIews */,
+				C8170A612A386C5F004D082C /* Widgets */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C8170A6C2A388235004D082C /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				C8170A6D2A38824F004D082C /* Sheet Button.swift */,
+				C8170A6F2A388BE0004D082C /* TextInputStyle.swift */,
+			);
+			path = UX;
+			sourceTree = "<group>";
+		};
 		C870973C2A371FCE00710495 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +168,9 @@
 		C87097472A371FCE00710495 /* YourManager */ = {
 			isa = PBXGroup;
 			children = (
+				C8170A6C2A388235004D082C /* UX */,
+				C8170A642A386D42004D082C /* Resources */,
+				C8170A5D2A386A36004D082C /* Features */,
 				C87097722A37204700710495 /* GoogleService-Info.plist */,
 				C87097482A371FCE00710495 /* YourManagerApp.swift */,
 				C870974A2A371FCE00710495 /* ContentView.swift */,
@@ -146,6 +221,11 @@
 			dependencies = (
 			);
 			name = YourManager;
+			packageProductDependencies = (
+				C87097752A37214600710495 /* FirebaseAnalytics */,
+				C87097772A37214600710495 /* FirebaseAuth */,
+				C87097792A37214600710495 /* FirebaseFirestore */,
+			);
 			productName = YourManager;
 			productReference = C87097452A371FCE00710495 /* YourManager.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +298,9 @@
 				Base,
 			);
 			mainGroup = C870973C2A371FCE00710495;
+			packageReferences = (
+				C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C87097462A371FCE00710495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,8 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8170A602A386A53004D082C /* LoginView.swift in Sources */,
+				C8170A6B2A387F55004D082C /* Create Account Sheet.swift in Sources */,
+				C8170A6E2A38824F004D082C /* Sheet Button.swift in Sources */,
+				C8170A692A387D2E004D082C /* Screen Size.swift in Sources */,
+				C8170A702A388BE0004D082C /* TextInputStyle.swift in Sources */,
+				C8170A662A386D54004D082C /* Login Types.swift in Sources */,
 				C870974B2A371FCE00710495 /* ContentView.swift in Sources */,
 				C87097492A371FCE00710495 /* YourManagerApp.swift in Sources */,
+				C8170A632A386C76004D082C /* LoginButtonWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +677,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C87097752A37214600710495 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C87097772A37214600710495 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C87097792A37214600710495 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C870973D2A371FCE00710495 /* Project object */;
 }
