@@ -1,33 +1,34 @@
 //
-//  Create Account Sheet.swift
+//  MailAndPasswordLoginForm.swift
 //  YourManager
 //
-//  Created by Luca Salmi on 2023-06-13.
+//  Created by Luca Salmi on 2023-06-14.
 //
 
 import SwiftUI
 
-struct Create_Account_Sheet: View {
-    @Environment(\.dismiss) var dismiss
+struct MailAndPasswordLoginForm: View {
     @State private var email: String = ""
-    @State private var repeatedEmail: String = ""
     @State private var password: String = ""
-    @State private var repeatedPassword: String = ""
+    @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+
     
+    private func signInWithEmailPassword() {
+        Task {
+          if await viewModel.signInWithEmailPassword() == true {
+            dismiss()
+          }
+        }
+      }
+
     var body: some View {
-        VStack(alignment: .center){
-            
-            Text("Create a new Account").font(.title).padding(.bottom)
-            
+        VStack{
             TextField("E-mail",text: $email).textFieldStyle(RegisterTextFieldStyle())
-            TextField("Repeat E-mail",text: $repeatedEmail).textFieldStyle(RegisterTextFieldStyle())
             SecureField("Password",text: $password).textFieldStyle(RegisterTextFieldStyle())
-            SecureField("Repeat Password",text: $repeatedPassword).textFieldStyle(RegisterTextFieldStyle())
-            
-            
             HStack{
-                Button("Save") {
-                    if(email.isValidEmail() && email == repeatedEmail){
+                Button("Login") {
+                    if(email.isValidEmail()){
                         print("valid")
                     }else{
                         print("invalid")
@@ -41,7 +42,6 @@ struct Create_Account_Sheet: View {
                 }
                 .buttonStyle(SheetButton(buttonColor: .red))
             }.padding()
-            
         }.padding()
     }
 }

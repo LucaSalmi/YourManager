@@ -11,12 +11,12 @@ import SwiftUI
 
 struct LoginButtonWidget: View {
     var loginType: LoginType
-    
+    var buttonAction:  () -> Void
     
     
     var body: some View {
         Button{
-            print("Pressed \(loginType)")
+            buttonAction()
         }label: {
             HStack{
                 Image(loginType.getButtonIcon())
@@ -25,7 +25,6 @@ struct LoginButtonWidget: View {
                 
                 Text(loginType.getButtonText())
             }
-            
         }
         .buttonBorderShape(.roundedRectangle)
         .buttonStyle(.borderedProminent)
@@ -33,5 +32,3 @@ struct LoginButtonWidget: View {
         .padding(3)
     }
 }
-
-
