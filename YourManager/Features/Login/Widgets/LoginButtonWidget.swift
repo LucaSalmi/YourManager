@@ -11,12 +11,12 @@ import SwiftUI
 
 struct LoginButtonWidget: View {
     var loginType: LoginType
-    
+    var buttonAction: () -> Void
     
     
     var body: some View {
         Button{
-            print("Pressed \(loginType)")
+            buttonAction()
         }label: {
             HStack{
                 Image(loginType.getButtonIcon())

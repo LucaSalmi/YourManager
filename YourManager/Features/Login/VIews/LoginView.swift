@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var showingSheet = false
+    @State private var showingRegisterSheet = false
+    @State private var showingLoginSheet = false
+    
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Image("your.manager.logo")
                 .resizable()
                 .frame(width:UIScreen.screenWidth, height: UIScreen.screenHeight/4 ,alignment: .top)
                 .edgesIgnoringSafeArea(.top)
-            LoginButtonWidget(loginType: LoginType.google)
-            LoginButtonWidget(loginType: LoginType.apple)
-            LoginButtonWidget(loginType: LoginType.mailAndPassword)
+            LoginButtonWidget(loginType: LoginType.google) {
+                print("Pressed \(LoginType.google)")
+            }
+            LoginButtonWidget(loginType: LoginType.apple) {
+                print("Pressed \(LoginType.apple)")
+            }
+            LoginButtonWidget(loginType: LoginType.mailAndPassword) {
+                showingLoginSheet.toggle()
+            }
+            .sheet(isPresented: $showingLoginSheet) {
+                MailAndPasswordLoginForm()
+            }
             Button("Create a new Account"){
-                showingSheet.toggle()
-            }.sheet(isPresented: $showingSheet) {
+                showingRegisterSheet.toggle()
+            }.sheet(isPresented: $showingRegisterSheet) {
                 Create_Account_Sheet()
             }
                 
