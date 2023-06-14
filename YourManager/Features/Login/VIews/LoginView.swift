@@ -10,6 +10,16 @@ import SwiftUI
 struct LoginView: View {
     @State private var showingRegisterSheet = false
     @State private var showingLoginSheet = false
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @Environment(\.dismiss) var dismiss
+    
+    private func signInWithGoogle() {
+        Task {
+          if await viewModel.signInWithGoogle() == true {
+            dismiss()
+          }
+        }
+      }
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
@@ -18,7 +28,7 @@ struct LoginView: View {
                 .frame(width:UIScreen.screenWidth, height: UIScreen.screenHeight/4 ,alignment: .top)
                 .edgesIgnoringSafeArea(.top)
             LoginButtonWidget(loginType: LoginType.google) {
-                print("Pressed \(LoginType.google)")
+                signInWithGoogle()
             }
             LoginButtonWidget(loginType: LoginType.apple) {
                 print("Pressed \(LoginType.apple)")

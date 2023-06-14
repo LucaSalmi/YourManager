@@ -11,6 +11,16 @@ struct MailAndPasswordLoginForm: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+
+    
+    private func signInWithEmailPassword() {
+        Task {
+          if await viewModel.signInWithEmailPassword() == true {
+            dismiss()
+          }
+        }
+      }
 
     var body: some View {
         VStack{
