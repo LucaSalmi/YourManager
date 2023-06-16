@@ -26,7 +26,7 @@ struct YourManagerApp: App {
             if(viewModel.authenticationState == AuthenticationState.unauthenticated){
                 LoginView().environmentObject(viewModel)
             }else{
-                HomePageView().environmentObject(viewModel)
+                MainPageView().environmentObject(viewModel)
             }
             
         }
