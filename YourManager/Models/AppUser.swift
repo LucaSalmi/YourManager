@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  AppUser.swift
 //  YourManager
 //
 //  Created by Luca Salmi on 2023-06-14.
