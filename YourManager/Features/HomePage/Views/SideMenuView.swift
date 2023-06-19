@@ -18,7 +18,7 @@ struct SideMenuView: View {
             ZStack{
                 Rectangle()
                     .fill(.white)
-                    .frame(width: 270)
+                    .frame(width: UIScreen.screenWidth/1.8)
                     .shadow(color: .green.opacity(0.1), radius: 5, x: 0, y: 3)
                 
                 VStack(alignment: .leading, spacing: 0) {
@@ -33,7 +33,7 @@ struct SideMenuView: View {
                     Spacer()
                 }
                 .padding(.top, 100)
-                .frame(width: 270)
+                .frame(width: UIScreen.screenWidth/1.8)
                 .background(
                     Color.white
                 )
