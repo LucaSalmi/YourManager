@@ -16,7 +16,7 @@ struct ContactCard: View {
             HStack{
                 Text(contact.contactName)
                 Spacer()
-                ContactStatusBadge(statuses: DefaultValues().standardContactStatus, currentStatusIndex: 0)
+                ContactStatusBadge(currentStatus: contact.status)
             }
             Text(contact.phoneNumbers.first!)
             Text(contact.postAdresses.first!)

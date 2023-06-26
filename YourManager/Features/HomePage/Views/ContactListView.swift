@@ -14,12 +14,14 @@ struct ContactListView: View {
         NavigationView {
             List {
                 ContactCard(contact: DefaultValues().standardContactInfo).padding(10)
+                ContactCard(contact: DefaultValues().standardContactInfo2).padding(10)
+
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
                     Button {
                         presentSideMenu.toggle()
                     } label: {
-                        Image(systemName: "text.justify").foregroundColor(.green)
+                        Image(systemName: "sidebar.left").foregroundColor(.green)
                     }
                 }
                 ToolbarItem(placement: .principal){

@@ -9,27 +9,25 @@ import SwiftUI
 
 struct ContactStatusBadge: View {
     
-    var statuses: [ContactStatus]
-    var currentStatusIndex: Int
-    @State var selected: ContactStatus = DefaultValues().standardContactStatus[0]
+    @State var currentStatus: ContactStatus
+    //TODO(Luca) Use User's own list of statuses
+    var allStatuses = ContactStatus.allCases
+    
     
     var body: some View {
-        Picker("", selection: $selected) {
-            ForEach(statuses, id: \.self){
-                Text($0.statusName)
-            }
-        }.pickerStyle(.menu)
-    }
-}
-
-struct ClosedStatusList: View{
-    
-    var status: ContactStatus
-    
-    var body: some View{
         HStack{
-            Circle().foregroundColor((Color(hex: status.statusColorHex))).frame(width: 15, height: 15)
-            Text(status.statusName)
+            Circle().fill(currentStatus.color).frame(width: 15, height: 15)
+            Picker("", selection: $currentStatus) {
+                ForEach(allStatuses, id: \.self){
+                    Text($0.name)
+                }
+            }.pickerStyle(.menu)     .onReceive([self.currentStatus].publisher.first()) { (value) in
+                //TODO(Luca) This will change the status on the specific Contact
+                print(value)
         }
+        }
+        
+        
+        
     }
 }
