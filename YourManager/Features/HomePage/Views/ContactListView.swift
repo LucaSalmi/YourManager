@@ -13,7 +13,7 @@ struct ContactListView: View {
     var body: some View {
         NavigationView {
             List {
-                ContactCard(contact: DefaultValues().standardContactInfo)
+                ContactCard(contact: DefaultValues().standardContactInfo).padding(10)
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
                     Button {

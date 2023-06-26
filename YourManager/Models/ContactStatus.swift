@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ContactStatus: Identifiable, Codable{
-    
+class ContactStatus: HashableClass, Identifiable, Codable{
+   
     var statusName: String
     var statusColorHex: String
     

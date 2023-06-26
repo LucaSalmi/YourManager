@@ -11,40 +11,25 @@ struct ContactStatusBadge: View {
     
     var statuses: [ContactStatus]
     var currentStatusIndex: Int
-    @Binding var isOn: Bool
+    @State var selected: ContactStatus = DefaultValues().standardContactStatus[0]
     
     var body: some View {
-        Button(action: {
-            withAnimation {
-                isOn.toggle()
+        Picker("", selection: $selected) {
+            ForEach(statuses, id: \.self){
+                Text($0.statusName)
             }
-        }, label: {
-            if isOn {
-                ZStack{
-                    ClosedStatusList(statuses: statuses, currentStatusIndex: currentStatusIndex)
-                    ContactStatusList(userStatusesList: statuses)
-                }
-            } else {
-                ClosedStatusList(statuses: statuses, currentStatusIndex: currentStatusIndex)
-            }
-        }).cornerRadius(25)
-            .font(Font.caption)
-            .foregroundColor(.accentColor)
-            .frame(maxWidth: .infinity, alignment: .trailing)
-            .buttonStyle(.bordered)
+        }.pickerStyle(.menu)
     }
 }
 
 struct ClosedStatusList: View{
     
-    var statuses: [ContactStatus]
-    var currentStatusIndex: Int
+    var status: ContactStatus
     
     var body: some View{
         HStack{
-            Circle().foregroundColor((Color(hex: statuses[currentStatusIndex].statusColorHex))).frame(width: 15, height: 15)
-            Text(statuses[currentStatusIndex].statusName)
-            Image(systemName: "chevron.down")
+            Circle().foregroundColor((Color(hex: status.statusColorHex))).frame(width: 15, height: 15)
+            Text(status.statusName)
         }
     }
 }
