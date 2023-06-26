@@ -13,28 +13,29 @@ struct ContactListView: View {
     var body: some View {
         NavigationView {
             List {
-                
-            }
-            .toolbar {
+                ContactCard(contact: DefaultValues().standardContactInfo).padding(10)
+                ContactCard(contact: DefaultValues().standardContactInfo2).padding(10)
+
+            }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
                     Button {
                         presentSideMenu.toggle()
                     } label: {
-                        Image(systemName: "text.justify")
+                        Image(systemName: "sidebar.left").foregroundColor(.green)
                     }
                 }
                 ToolbarItem(placement: .principal){
-                    Text("Home Page")
+                    Text("Home Page").foregroundColor(.green)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button {
                         print("filter")
                     } label: {
-                        Image(systemName: "line.3.horizontal.decrease.circle")
+                        Image(systemName: "line.3.horizontal.decrease.circle").foregroundColor(.green)
                     }
                 }
                 
-            }.foregroundColor(.green)
+            }
         }
     }
 }
