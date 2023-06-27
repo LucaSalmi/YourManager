@@ -19,7 +19,7 @@ struct SideMenuView: View {
                 Rectangle()
                     .fill(.white)
                     .frame(width: UIScreen.screenWidth/1.8)
-                    .shadow(color: .green.opacity(0.1), radius: 5, x: 0, y: 3)
+                    .shadow(color: YourManagerColors.mainColor.appColors.opacity(0.1), radius: 5, x: 0, y: 3)
                 
                 VStack(alignment: .leading, spacing: 0) {
                     
@@ -54,7 +54,7 @@ struct SideMenuView: View {
             VStack(alignment: .leading){
                 HStack(spacing: 20){
                     Rectangle()
-                        .fill(isSelected ? .green : .white)
+                        .fill(isSelected ? YourManagerColors.mainColor.appColors : .white)
                         .frame(width: 5)
                     
                     ZStack{
@@ -74,7 +74,7 @@ struct SideMenuView: View {
         }
         .frame(height: 50)
         .background(
-            LinearGradient(colors: [isSelected ? .green.opacity(0.5) : .white, .white], startPoint: .leading, endPoint: .trailing)
+            LinearGradient(colors: [isSelected ? YourManagerColors.mainColor.appColors.opacity(0.5) : .white, .white], startPoint: .leading, endPoint: .trailing)
         )
     }
 }

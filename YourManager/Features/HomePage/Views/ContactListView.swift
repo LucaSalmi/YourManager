@@ -21,17 +21,17 @@ struct ContactListView: View {
                     Button {
                         presentSideMenu.toggle()
                     } label: {
-                        Image(systemName: "sidebar.left").foregroundColor(.green)
+                        Image(systemName: "sidebar.left").foregroundColor(YourManagerColors.mainColor.appColors)
                     }
                 }
                 ToolbarItem(placement: .principal){
-                    Text("Home Page").foregroundColor(.green)
+                    Text("Home Page").foregroundColor(YourManagerColors.mainColor.appColors)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button {
                         print("filter")
                     } label: {
-                        Image(systemName: "line.3.horizontal.decrease.circle").foregroundColor(.green)
+                        Image(systemName: "line.3.horizontal.decrease.circle").foregroundColor(YourManagerColors.mainColor.appColors)
                     }
                 }
                 

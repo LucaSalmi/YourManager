@@ -35,7 +35,7 @@ struct MailAndPasswordLoginForm: View {
                     }
                     dismiss()
                 }
-                .buttonStyle(SheetButton(buttonColor: .green))
+                .buttonStyle(SheetButton(buttonColor: YourManagerColors.mainColor.appColors))
                 
                 Button("Cancel") {
                     dismiss()

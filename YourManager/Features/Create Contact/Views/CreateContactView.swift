@@ -23,11 +23,10 @@ struct CreateContactView: View {
         return FloatingLabelTextField(
             textlocation,
             placeholder: placeholderTxt
-            
         )
-        .selectedLineColor(.green)
+        .selectedLineColor(YourManagerColors.mainColor.appColors)
         .selectedTextColor(.black)
-        .selectedTitleColor(.green)
+        .selectedTitleColor(YourManagerColors.mainColor.appColors)
         .padding(.horizontal)
     }
     
@@ -74,7 +73,7 @@ struct CreateContactView: View {
                     Text("Save")
                 }.buttonBorderShape(.roundedRectangle)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(YourManagerColors.mainColor.appColors)
                     .padding(3)
                 
             }.toolbar {
@@ -82,11 +81,11 @@ struct CreateContactView: View {
                     Button {
                         presentSideMenu.toggle()
                     } label: {
-                        Image(systemName: "sidebar.left").foregroundColor(.green)
+                        Image(systemName: "sidebar.left").foregroundColor(YourManagerColors.mainColor.appColors)
                     }
                 }
                 ToolbarItem(placement: .principal){
-                    Text("Create a New Contact").foregroundColor(.green)
+                    Text("Create a New Contact").foregroundColor(YourManagerColors.mainColor.appColors)
                 }
             }
         }

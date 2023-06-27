@@ -30,7 +30,6 @@
 		C84842862A40526D00DF143D /* ContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84842852A40526D00DF143D /* ContactStatus.swift */; };
 		C84842882A40548800DF143D /* StandardContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84842872A40548800DF143D /* StandardContactStatus.swift */; };
 		C848428A2A40581300DF143D /* ContactStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84842892A40581300DF143D /* ContactStatusBadge.swift */; };
-		C848428C2A405A9100DF143D /* HexConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C848428B2A405A9100DF143D /* HexConverter.swift */; };
 		C87097492A371FCE00710495 /* YourManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87097482A371FCE00710495 /* YourManagerApp.swift */; };
 		C870974D2A371FCF00710495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C870974C2A371FCF00710495 /* Assets.xcassets */; };
 		C87097502A371FCF00710495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C870974F2A371FCF00710495 /* Preview Assets.xcassets */; };
@@ -44,6 +43,7 @@
 		C87B29522A4B13960099C5BE /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B29512A4B13960099C5BE /* CreateContactView.swift */; };
 		C87B29572A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C87B29562A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI */; };
 		C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */; };
+		C87B295C2A4B2EED0099C5BE /* YourManagerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */; };
 		C8CB1AEF2A499DA5001B2340 /* HashableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,6 @@
 		C84842852A40526D00DF143D /* ContactStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatus.swift; sourceTree = "<group>"; };
 		C84842872A40548800DF143D /* StandardContactStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardContactStatus.swift; sourceTree = "<group>"; };
 		C84842892A40581300DF143D /* ContactStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStatusBadge.swift; sourceTree = "<group>"; };
-		C848428B2A405A9100DF143D /* HexConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexConverter.swift; sourceTree = "<group>"; };
 		C87097452A371FCE00710495 /* YourManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87097482A371FCE00710495 /* YourManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerApp.swift; sourceTree = "<group>"; };
 		C870974C2A371FCF00710495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		C87097722A37204700710495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C87B29512A4B13960099C5BE /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
+		C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerColors.swift; sourceTree = "<group>"; };
 		C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +189,7 @@
 			children = (
 				C8170A6D2A38824F004D082C /* Sheet Button.swift */,
 				C8170A6F2A388BE0004D082C /* TextInputStyle.swift */,
+				C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */,
 			);
 			path = UX;
 			sourceTree = "<group>";
@@ -207,7 +208,6 @@
 			children = (
 				C8170A682A387D2E004D082C /* Screen Size.swift */,
 				C847B4F52A39B3E600460996 /* EmailValidator.swift */,
-				C848428B2A405A9100DF143D /* HexConverter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -498,12 +498,12 @@
 				C8170A602A386A53004D082C /* LoginView.swift in Sources */,
 				C8170A6B2A387F55004D082C /* Create Account Sheet.swift in Sources */,
 				C8170A6E2A38824F004D082C /* Sheet Button.swift in Sources */,
-				C848428C2A405A9100DF143D /* HexConverter.swift in Sources */,
 				C8170A692A387D2E004D082C /* Screen Size.swift in Sources */,
 				C84842822A40516200DF143D /* ContactCard.swift in Sources */,
 				C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */,
 				C87B29522A4B13960099C5BE /* CreateContactView.swift in Sources */,
 				C84842862A40526D00DF143D /* ContactStatus.swift in Sources */,
+				C87B295C2A4B2EED0099C5BE /* YourManagerColors.swift in Sources */,
 				C8170A702A388BE0004D082C /* TextInputStyle.swift in Sources */,
 				C8170A662A386D54004D082C /* Login Types.swift in Sources */,
 				C8335AA42A3C7B60000BDCFA /* SideMenu.swift in Sources */,
