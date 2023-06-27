@@ -18,7 +18,7 @@ struct MainPageView: View {
             TabView(selection: $selectedSideMenuTab) {
                 ContactListView(presentSideMenu: $presentSideMenu)
                     .tag(0)
-                ContactListView(presentSideMenu: $presentSideMenu)
+                CreateContactView(presentSideMenu: $presentSideMenu, selectedtab: $selectedSideMenuTab)
                     .tag(1)
                 ContactListView(presentSideMenu: $presentSideMenu)
                     .tag(2)

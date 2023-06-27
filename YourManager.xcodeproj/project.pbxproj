@@ -41,6 +41,9 @@
 		C87097762A37214600710495 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C87097752A37214600710495 /* FirebaseAnalytics */; };
 		C87097782A37214600710495 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C87097772A37214600710495 /* FirebaseAuth */; };
 		C870977A2A37214600710495 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C87097792A37214600710495 /* FirebaseFirestore */; };
+		C87B29522A4B13960099C5BE /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B29512A4B13960099C5BE /* CreateContactView.swift */; };
+		C87B29572A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C87B29562A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI */; };
+		C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */; };
 		C8CB1AEF2A499DA5001B2340 /* HashableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,8 @@
 		C87097632A371FCF00710495 /* YourManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerUITests.swift; sourceTree = "<group>"; };
 		C87097652A371FCF00710495 /* YourManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C87097722A37204700710495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C87B29512A4B13960099C5BE /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
+		C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
 		C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C847B4FE2A39B96900460996 /* GoogleSignInSwift in Frameworks */,
+				C87B29572A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI in Frameworks */,
 				C87097762A37214600710495 /* FirebaseAnalytics in Frameworks */,
 				C847B4FC2A39B96900460996 /* GoogleSignIn in Frameworks */,
 				C87097782A37214600710495 /* FirebaseAuth in Frameworks */,
@@ -131,6 +137,7 @@
 		C8170A5D2A386A36004D082C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C87B294F2A4B13680099C5BE /* Create Contact */,
 				C84842802A40514200DF143D /* Contact Card */,
 				C847B5052A39C42600460996 /* HomePage */,
 				C8170A672A387682004D082C /* Login */,
@@ -312,6 +319,31 @@
 			path = YourManagerUITests;
 			sourceTree = "<group>";
 		};
+		C87B294F2A4B13680099C5BE /* Create Contact */ = {
+			isa = PBXGroup;
+			children = (
+				C87B29582A4B29DB0099C5BE /* ViewModels */,
+				C87B29502A4B13770099C5BE /* Views */,
+			);
+			path = "Create Contact";
+			sourceTree = "<group>";
+		};
+		C87B29502A4B13770099C5BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C87B29512A4B13960099C5BE /* CreateContactView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C87B29582A4B29DB0099C5BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +366,7 @@
 				C87097792A37214600710495 /* FirebaseFirestore */,
 				C847B4FB2A39B96900460996 /* GoogleSignIn */,
 				C847B4FD2A39B96900460996 /* GoogleSignInSwift */,
+				C87B29562A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI */,
 			);
 			productName = YourManager;
 			productReference = C87097452A371FCE00710495 /* YourManager.app */;
@@ -410,6 +443,7 @@
 			packageReferences = (
 				C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				C847B4FA2A39B96900460996 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				C87B29552A4B21960099C5BE /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */,
 			);
 			productRefGroup = C87097462A371FCE00710495 /* Products */;
 			projectDirPath = "";
@@ -467,6 +501,8 @@
 				C848428C2A405A9100DF143D /* HexConverter.swift in Sources */,
 				C8170A692A387D2E004D082C /* Screen Size.swift in Sources */,
 				C84842822A40516200DF143D /* ContactCard.swift in Sources */,
+				C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */,
+				C87B29522A4B13960099C5BE /* CreateContactView.swift in Sources */,
 				C84842862A40526D00DF143D /* ContactStatus.swift in Sources */,
 				C8170A702A388BE0004D082C /* TextInputStyle.swift in Sources */,
 				C8170A662A386D54004D082C /* Login Types.swift in Sources */,
@@ -822,6 +858,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		C87B29552A4B21960099C5BE /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishanraja/FloatingLabelTextFieldSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -849,6 +893,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C87097742A37214600710495 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		C87B29562A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C87B29552A4B21960099C5BE /* XCRemoteSwiftPackageReference "FloatingLabelTextFieldSwiftUI" */;
+			productName = FloatingLabelTextFieldSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
