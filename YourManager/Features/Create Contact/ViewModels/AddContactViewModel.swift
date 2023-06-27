@@ -13,8 +13,10 @@ enum CreateContactState{
     case error
 }
 
-class CreateContactViewModel: ObservableObject{
+class CreateContactViewModel: ObservableObject {
+    
     @Published var name: String = ""
     @Published var contactPerson: String = ""
     @Published var notes: String = ""
+    
 }
