@@ -17,6 +17,9 @@ class CreateContactViewModel: ObservableObject {
     
     @Published var name: String = ""
     @Published var contactPerson: String = ""
+    @Published var phoneNumber: String = ""
+    @Published var eMailAdress: String = ""
+    @Published var postAdress: String = ""
     @Published var notes: String = ""
     
 }

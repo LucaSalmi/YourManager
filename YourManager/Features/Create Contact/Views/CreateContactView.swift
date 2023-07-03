@@ -17,19 +17,6 @@ struct CreateContactView: View {
     @StateObject var viewModel = CreateContactViewModel()
     @State private var showingContactInformationSheet = false
     
-    
-    
-    func getTextInputField(textlocation: Binding<String> ,placeholderTxt: String) -> some View{
-        return FloatingLabelTextField(
-            textlocation,
-            placeholder: placeholderTxt
-        )
-        .selectedLineColor(YourManagerColors.mainColor.appColors)
-        .selectedTextColor(.black)
-        .selectedTitleColor(YourManagerColors.mainColor.appColors)
-        .padding(.horizontal)
-    }
-    
     var body: some View {
         NavigationView {
             VStack(spacing: 15){
@@ -37,8 +24,8 @@ struct CreateContactView: View {
                     Spacer()
                     ContactStatusBadge(currentStatus: ContactStatus.booked).padding(.horizontal)
                 }
-                getTextInputField(textlocation: $viewModel.name, placeholderTxt: "Company")
-                getTextInputField(textlocation: $viewModel.contactPerson, placeholderTxt: "Contact Person")
+                TextInputWithFloatingLabel(textlocation: $viewModel.name, placeholderTxt: "Company")
+                TextInputWithFloatingLabel(textlocation: $viewModel.contactPerson, placeholderTxt: "Contact Person")
                 HStack{
                     Button {
                         showingContactInformationSheet.toggle()
@@ -47,7 +34,7 @@ struct CreateContactView: View {
                         }
                     .padding(.horizontal)
                     .sheet(isPresented: $showingContactInformationSheet) {
-                        Text("Add Contact info")
+                        AddContactInfoSheetView(viewModel: viewModel)
                     }
                     
                     Spacer()
@@ -66,15 +53,10 @@ struct CreateContactView: View {
                 
                 Spacer()
                 
-                Button {
+                StandardConfirmationButton(buttonAction: {
                     print("save")
                     selectedtab = 0
-                } label: {
-                    Text("Save")
-                }.buttonBorderShape(.roundedRectangle)
-                    .buttonStyle(.borderedProminent)
-                    .tint(YourManagerColors.mainColor.appColors)
-                    .padding(3)
+                }, labelText: "Save")
                 
             }.toolbar {
                 ToolbarItem(placement: .navigationBarLeading){

@@ -44,6 +44,9 @@
 		C87B29572A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C87B29562A4B21960099C5BE /* FloatingLabelTextFieldSwiftUI */; };
 		C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */; };
 		C87B295C2A4B2EED0099C5BE /* YourManagerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */; };
+		C8ABF6F72A530D62001F70BB /* AddContactInfoSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABF6F62A530D62001F70BB /* AddContactInfoSheetView.swift */; };
+		C8ABF6F92A530E46001F70BB /* TextInputWithFloatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABF6F82A530E46001F70BB /* TextInputWithFloatingLabel.swift */; };
+		C8ABF6FB2A5313C9001F70BB /* StandardConfirmationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABF6FA2A5313C9001F70BB /* StandardConfirmationButton.swift */; };
 		C8CB1AEF2A499DA5001B2340 /* HashableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,9 @@
 		C87B29512A4B13960099C5BE /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		C87B29592A4B29F40099C5BE /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
 		C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourManagerColors.swift; sourceTree = "<group>"; };
+		C8ABF6F62A530D62001F70BB /* AddContactInfoSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInfoSheetView.swift; sourceTree = "<group>"; };
+		C8ABF6F82A530E46001F70BB /* TextInputWithFloatingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputWithFloatingLabel.swift; sourceTree = "<group>"; };
+		C8ABF6FA2A5313C9001F70BB /* StandardConfirmationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardConfirmationButton.swift; sourceTree = "<group>"; };
 		C8CB1AEE2A499DA5001B2340 /* HashableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +196,8 @@
 				C8170A6D2A38824F004D082C /* Sheet Button.swift */,
 				C8170A6F2A388BE0004D082C /* TextInputStyle.swift */,
 				C87B295B2A4B2EED0099C5BE /* YourManagerColors.swift */,
+				C8ABF6F82A530E46001F70BB /* TextInputWithFloatingLabel.swift */,
+				C8ABF6FA2A5313C9001F70BB /* StandardConfirmationButton.swift */,
 			);
 			path = UX;
 			sourceTree = "<group>";
@@ -332,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				C87B29512A4B13960099C5BE /* CreateContactView.swift */,
+				C8ABF6F62A530D62001F70BB /* AddContactInfoSheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -492,6 +501,7 @@
 				C8335AA72A3C7BCF000BDCFA /* SideMenuRowType.swift in Sources */,
 				C84842842A40519900DF143D /* Contact.swift in Sources */,
 				C847B5022A39BB7C00460996 /* AuthenticationViewModel.swift in Sources */,
+				C8ABF6FB2A5313C9001F70BB /* StandardConfirmationButton.swift in Sources */,
 				C8CB1AEF2A499DA5001B2340 /* HashableClass.swift in Sources */,
 				C8335AA92A3C7C9E000BDCFA /* SideMenuView.swift in Sources */,
 				C847B5082A39C44100460996 /* ContactListView.swift in Sources */,
@@ -500,12 +510,14 @@
 				C8170A6E2A38824F004D082C /* Sheet Button.swift in Sources */,
 				C8170A692A387D2E004D082C /* Screen Size.swift in Sources */,
 				C84842822A40516200DF143D /* ContactCard.swift in Sources */,
+				C8ABF6F92A530E46001F70BB /* TextInputWithFloatingLabel.swift in Sources */,
 				C87B295A2A4B29F40099C5BE /* AddContactViewModel.swift in Sources */,
 				C87B29522A4B13960099C5BE /* CreateContactView.swift in Sources */,
 				C84842862A40526D00DF143D /* ContactStatus.swift in Sources */,
 				C87B295C2A4B2EED0099C5BE /* YourManagerColors.swift in Sources */,
 				C8170A702A388BE0004D082C /* TextInputStyle.swift in Sources */,
 				C8170A662A386D54004D082C /* Login Types.swift in Sources */,
+				C8ABF6F72A530D62001F70BB /* AddContactInfoSheetView.swift in Sources */,
 				C8335AA42A3C7B60000BDCFA /* SideMenu.swift in Sources */,
 				C87097492A371FCE00710495 /* YourManagerApp.swift in Sources */,
 				C8335AAB2A3C7DED000BDCFA /* MainPageView.swift in Sources */,
